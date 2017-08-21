@@ -1,0 +1,34 @@
+<div class="pure-g">
+	<div class="pure-u-12-24">
+		<p class="bold">Dealer: </p>
+			{{ #dealerHand }}
+				<p>	{{ . }} </p>
+			{{ /dealerHand }}
+	</div>
+	<br>
+	<div class="pure-u-12-24" id="deck">
+		<p class="bold">Cards Left: <span class="cardCount"></span><!-- Insert deckCardCount mustache here --></p>
+			<!-- Start totalDeck mustache here -->
+				<img src="./cardback.svg" class="deck" alt="Card backing">
+			<!--  End totalDeck mustache here -->
+	</div>
+</div>
+
+<br>
+
+<div class="pure-g">
+	<div class="pure-u-12-24">
+		<p class="bold">Player:</p>
+				<!--  Star playerHand mustache here -->
+				<p> <!-- Display playerHand mustache here --></p>
+				<!--  End playerHand mustache here -->
+		
+		<div class="pure-button-group" role="group">
+			<button class="pure-button" name="playerOptions" value="hit" action="/hit">Hit</button>
+			<button class="pure-button" name="playerOptions" value="stand" action="/stand">Stand</button>
+			<button class="pure-button" name="playerOptions" value="split" action="/split">Split</button>
+			<button class="pure-button" name="playerOptions" value="double" action="/double">Double</button>
+		</div>
+	</div>
+</div>
+

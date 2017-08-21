@@ -1,0 +1,29 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.dealerAndDeck {
+	width: 49%;
+	display: justify-right;
+	vertical-align: top;
+}
+
+.deck {
+	height: 100px;
+	width: 100px;
+}
+
+.bold {
+	font-weight: bolder;
+}
+
+#deck {
+	float: right;
+}
+
+#jack {
+	color: red;
+}
